@@ -14,6 +14,7 @@ return require('packer').startup(function(use)
 		config = function()
 			vim.cmd('colorscheme rose-pine')
 	end})
+
 	use('theprimeagen/harpoon')
 	use('mbbill/undotree')
 	use('tpope/vim-fugitive')

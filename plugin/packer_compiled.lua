@@ -197,6 +197,14 @@ _G.packer_plugins = {
     path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\undotree",
     url = "https://github.com/mbbill/undotree"
   },
+  ["vim-be-good"] = {
+    cond = { "return not vim.g.vscode" },
+    loaded = false,
+    needs_bufread = false,
+    only_cond = true,
+    path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\vim-be-good",
+    url = "https://github.com/theprimeagen/vim-be-good"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-fugitive",
@@ -219,30 +227,33 @@ _G.packer_plugins = {
 
 time([[Defining packer_plugins]], false)
 -- Conditional loads
-time([[Conditional loading of undotree]], true)
-  require("packer.load")({"undotree"}, {}, _G.packer_plugins)
-time([[Conditional loading of undotree]], false)
-time([[Conditional loading of nvim-treesitter]], true)
-  require("packer.load")({"nvim-treesitter"}, {}, _G.packer_plugins)
-time([[Conditional loading of nvim-treesitter]], false)
 time([[Conditional loading of copilot.vim]], true)
   require("packer.load")({"copilot.vim"}, {}, _G.packer_plugins)
 time([[Conditional loading of copilot.vim]], false)
+time([[Conditional loading of undotree]], true)
+  require("packer.load")({"undotree"}, {}, _G.packer_plugins)
+time([[Conditional loading of undotree]], false)
+time([[Conditional loading of vim-surround]], true)
+  require("packer.load")({"vim-surround"}, {}, _G.packer_plugins)
+time([[Conditional loading of vim-surround]], false)
 time([[Conditional loading of harpoon]], true)
   require("packer.load")({"harpoon"}, {}, _G.packer_plugins)
 time([[Conditional loading of harpoon]], false)
-time([[Conditional loading of telescope.nvim]], true)
-  require("packer.load")({"telescope.nvim"}, {}, _G.packer_plugins)
-time([[Conditional loading of telescope.nvim]], false)
 time([[Conditional loading of lsp-zero.nvim]], true)
   require("packer.load")({"lsp-zero.nvim"}, {}, _G.packer_plugins)
 time([[Conditional loading of lsp-zero.nvim]], false)
 time([[Conditional loading of tokyonight.nvim]], true)
   require("packer.load")({"tokyonight.nvim"}, {}, _G.packer_plugins)
 time([[Conditional loading of tokyonight.nvim]], false)
-time([[Conditional loading of vim-surround]], true)
-  require("packer.load")({"vim-surround"}, {}, _G.packer_plugins)
-time([[Conditional loading of vim-surround]], false)
+time([[Conditional loading of telescope.nvim]], true)
+  require("packer.load")({"telescope.nvim"}, {}, _G.packer_plugins)
+time([[Conditional loading of telescope.nvim]], false)
+time([[Conditional loading of nvim-treesitter]], true)
+  require("packer.load")({"nvim-treesitter"}, {}, _G.packer_plugins)
+time([[Conditional loading of nvim-treesitter]], false)
+time([[Conditional loading of vim-be-good]], true)
+  require("packer.load")({"vim-be-good"}, {}, _G.packer_plugins)
+time([[Conditional loading of vim-be-good]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

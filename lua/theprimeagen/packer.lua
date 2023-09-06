@@ -34,6 +34,10 @@ return require('packer').startup(function(use)
     }
 
     use {
+        'theprimeagen/vim-be-good',
+        cond = [[not vim.g.vscode]],
+    }
+    use {
         'theprimeagen/harpoon',
         cond = [[not vim.g.vscode]],
     }

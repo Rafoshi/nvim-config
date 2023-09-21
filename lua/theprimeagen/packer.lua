@@ -7,14 +7,13 @@ return require('packer').startup(function(use)
         'nvim-telescope/telescope.nvim',
         tag = '0.1.2',
         cond = [[not vim.g.vscode]],
-        requires = { 'nvim-lua/plenary.nvim' } -- Add requires for dependencies
+        requires = { 'nvim-lua/plenary.nvim' } 
     }
 
     use {
         "folke/tokyonight.nvim",
         cond = [[not vim.g.vscode]],
         config = function()
-            -- Your configuration for the plugin (if any)
         end
     }
 
@@ -32,11 +31,6 @@ return require('packer').startup(function(use)
             require'nvim-treesitter.install'.prefer_git = false
         end
     }
-
-    use {
-        'theprimeagen/vim-be-good',
-        cond = [[not vim.g.vscode]],
-    }
     use {
         'theprimeagen/harpoon',
         cond = [[not vim.g.vscode]],
@@ -46,15 +40,13 @@ return require('packer').startup(function(use)
         cond = [[not vim.g.vscode]],
     }
     use {
-        'mbbill/undotree', -- Add a comma here
+        'mbbill/undotree', 
         cond = [[not vim.g.vscode]],
     }
     use {
         'mg979/vim-visual-multi',
         branch = 'master'
     }
-    use 'tpope/vim-fugitive' -- Remove parentheses for this line
-
     use {
         'VonHeikemen/lsp-zero.nvim',
         cond = [[not vim.g.vscode]],
@@ -72,10 +64,6 @@ return require('packer').startup(function(use)
             'L3MON4D3/LuaSnip',
             'rafamadriz/friendly-snippets',
         }
-    }
-    use {
-        'tpope/vim-surround',
-        cond = [[not vim.g.vscode]],
     }
 end)
 

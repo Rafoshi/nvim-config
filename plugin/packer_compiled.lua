@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "C:\\Users\\rafai\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\share\\lua\\5.1\\?.lua;C:\\Users\\rafai\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\share\\lua\\5.1\\?\\init.lua;C:\\Users\\rafai\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\luarocks\\rocks-5.1\\?.lua;C:\\Users\\rafai\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\luarocks\\rocks-5.1\\?\\init.lua"
-local install_cpath_pattern = "C:\\Users\\rafai\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\lua\\5.1\\?.so"
+local package_path_str = "C:\\Users\\USER-B~1\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\share\\lua\\5.1\\?.lua;C:\\Users\\USER-B~1\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\share\\lua\\5.1\\?\\init.lua;C:\\Users\\USER-B~1\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\luarocks\\rocks-5.1\\?.lua;C:\\Users\\USER-B~1\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\luarocks\\rocks-5.1\\?\\init.lua"
+local install_cpath_pattern = "C:\\Users\\USER-B~1\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\lua\\5.1\\?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -76,32 +76,32 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   LuaSnip = {
     loaded = true,
-    path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
+    path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
   ["cmp-buffer"] = {
     loaded = true,
-    path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-buffer",
+    path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-buffer",
     url = "https://github.com/hrsh7th/cmp-buffer"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
-    path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
+    path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
   ["cmp-nvim-lua"] = {
     loaded = true,
-    path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lua",
+    path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lua",
     url = "https://github.com/hrsh7th/cmp-nvim-lua"
   },
   ["cmp-path"] = {
     loaded = true,
-    path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-path",
+    path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
   cmp_luasnip = {
     loaded = true,
-    path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp_luasnip",
+    path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
   ["copilot.vim"] = {
@@ -109,12 +109,12 @@ _G.packer_plugins = {
     loaded = false,
     needs_bufread = false,
     only_cond = true,
-    path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\copilot.vim",
+    path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\copilot.vim",
     url = "https://github.com/github/copilot.vim"
   },
   ["friendly-snippets"] = {
     loaded = true,
-    path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\friendly-snippets",
+    path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
   harpoon = {
@@ -122,7 +122,7 @@ _G.packer_plugins = {
     loaded = false,
     needs_bufread = false,
     only_cond = true,
-    path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\harpoon",
+    path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
   ["lsp-zero.nvim"] = {
@@ -130,27 +130,27 @@ _G.packer_plugins = {
     loaded = false,
     needs_bufread = false,
     only_cond = true,
-    path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\lsp-zero.nvim",
+    path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason-lspconfig.nvim",
+    path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason-lspconfig.nvim",
     url = "https://github.com/williamboman/mason-lspconfig.nvim"
   },
   ["mason.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason.nvim",
+    path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
-    path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
+    path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
+    path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-treesitter"] = {
@@ -159,17 +159,17 @@ _G.packer_plugins = {
     loaded = false,
     needs_bufread = false,
     only_cond = true,
-    path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\nvim-treesitter",
+    path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
+    path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
+    path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["telescope.nvim"] = {
@@ -177,7 +177,7 @@ _G.packer_plugins = {
     loaded = false,
     needs_bufread = true,
     only_cond = true,
-    path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\telescope.nvim",
+    path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["tokyonight.nvim"] = {
@@ -186,7 +186,7 @@ _G.packer_plugins = {
     loaded = false,
     needs_bufread = false,
     only_cond = true,
-    path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\tokyonight.nvim",
+    path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
   },
   undotree = {
@@ -194,12 +194,12 @@ _G.packer_plugins = {
     loaded = false,
     needs_bufread = false,
     only_cond = true,
-    path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\undotree",
+    path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\undotree",
     url = "https://github.com/mbbill/undotree"
   },
   ["vim-visual-multi"] = {
     loaded = true,
-    path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-visual-multi",
+    path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-visual-multi",
     url = "https://github.com/mg979/vim-visual-multi"
   }
 }
@@ -221,12 +221,12 @@ time([[Conditional loading of tokyonight.nvim]], false)
 time([[Conditional loading of harpoon]], true)
   require("packer.load")({"harpoon"}, {}, _G.packer_plugins)
 time([[Conditional loading of harpoon]], false)
-time([[Conditional loading of lsp-zero.nvim]], true)
-  require("packer.load")({"lsp-zero.nvim"}, {}, _G.packer_plugins)
-time([[Conditional loading of lsp-zero.nvim]], false)
 time([[Conditional loading of undotree]], true)
   require("packer.load")({"undotree"}, {}, _G.packer_plugins)
 time([[Conditional loading of undotree]], false)
+time([[Conditional loading of lsp-zero.nvim]], true)
+  require("packer.load")({"lsp-zero.nvim"}, {}, _G.packer_plugins)
+time([[Conditional loading of lsp-zero.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

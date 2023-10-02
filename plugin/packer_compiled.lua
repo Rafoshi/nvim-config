@@ -237,6 +237,11 @@ _G._packer.needs_bufread = false
 if should_profile then save_profiles() end
 
 end)
+function paint()
+    vim.cmd[[colorscheme tokyonight]]
+end
+
+paint()
 
 if not no_errors then
   error_msg = error_msg:gsub('"', '\\"')

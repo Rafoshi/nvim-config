@@ -36,6 +36,7 @@ vim.api.nvim_set_keymap('n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', 
 vim.api.nvim_set_keymap('n', '<leader>e', '<cmd>lua vim.diagnostic.open_float(0, {scope="line"})<CR>', { noremap = true, silent = true })
 
 vim.api.nvim_set_keymap('n', '<leader>q', '<cmd>lua paint()<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>t', '<cmd>term<CR>', { noremap = true, silent = true })
 
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")

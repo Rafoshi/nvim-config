@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "C:\\Users\\rafai\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1694082368\\share\\lua\\5.1\\?.lua;C:\\Users\\rafai\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1694082368\\share\\lua\\5.1\\?\\init.lua;C:\\Users\\rafai\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1694082368\\lib\\luarocks\\rocks-5.1\\?.lua;C:\\Users\\rafai\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1694082368\\lib\\luarocks\\rocks-5.1\\?\\init.lua"
-local install_cpath_pattern = "C:\\Users\\rafai\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1694082368\\lib\\lua\\5.1\\?.so"
+local package_path_str = "C:\\Users\\rafai\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1696883897\\share\\lua\\5.1\\?.lua;C:\\Users\\rafai\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1696883897\\share\\lua\\5.1\\?\\init.lua;C:\\Users\\rafai\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1696883897\\lib\\luarocks\\rocks-5.1\\?.lua;C:\\Users\\rafai\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1696883897\\lib\\luarocks\\rocks-5.1\\?\\init.lua"
+local install_cpath_pattern = "C:\\Users\\rafai\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1696883897\\lib\\lua\\5.1\\?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -220,15 +220,15 @@ time([[Defining packer_plugins]], false)
 time([[Conditional loading of nvim-treesitter]], true)
   require("packer.load")({"nvim-treesitter"}, {}, _G.packer_plugins)
 time([[Conditional loading of nvim-treesitter]], false)
-time([[Conditional loading of lsp-zero.nvim]], true)
-  require("packer.load")({"lsp-zero.nvim"}, {}, _G.packer_plugins)
-time([[Conditional loading of lsp-zero.nvim]], false)
 time([[Conditional loading of copilot.vim]], true)
   require("packer.load")({"copilot.vim"}, {}, _G.packer_plugins)
 time([[Conditional loading of copilot.vim]], false)
 time([[Conditional loading of harpoon]], true)
   require("packer.load")({"harpoon"}, {}, _G.packer_plugins)
 time([[Conditional loading of harpoon]], false)
+time([[Conditional loading of lsp-zero.nvim]], true)
+  require("packer.load")({"lsp-zero.nvim"}, {}, _G.packer_plugins)
+time([[Conditional loading of lsp-zero.nvim]], false)
 time([[Conditional loading of telescope.nvim]], true)
   require("packer.load")({"telescope.nvim"}, {}, _G.packer_plugins)
 time([[Conditional loading of telescope.nvim]], false)

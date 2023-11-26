@@ -30,3 +30,6 @@ end)
 
 vim.api.nvim_set_keymap('x', '<', '<gv', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('x', '>', '>gv', { noremap = true, silent = true })
+vim.api.nvim_command('set complete-=i')
+vim.api.nvim_command('set complete-=t')
+

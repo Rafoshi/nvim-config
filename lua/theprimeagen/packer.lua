@@ -9,6 +9,8 @@ return require('packer').startup(function(use)
         requires = { 'nvim-lua/plenary.nvim' }
     }
 
+    use { "mhinz/vim-startify" }
+
     use {
         "folke/tokyonight.nvim",
         config = function()

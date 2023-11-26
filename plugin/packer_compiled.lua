@@ -190,6 +190,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\undotree",
     url = "https://github.com/mbbill/undotree"
   },
+  ["vim-startify"] = {
+    loaded = true,
+    path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-startify",
+    url = "https://github.com/mhinz/vim-startify"
+  },
   ["vim-visual-multi"] = {
     loaded = true,
     path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-visual-multi",

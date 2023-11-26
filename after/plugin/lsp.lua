@@ -4,7 +4,6 @@ lsp.preset("recommended")
 
 lsp.ensure_installed({
   'tsserver',
-  'omnisharp',
   'csharp_ls',
 })
 
@@ -41,7 +40,7 @@ lsp.on_attach(function(client, bufnr)
 
   vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
   vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
-  vim.keymap.set("n", "<leader>vws", function() vim.lsp.buf.workspace_symbol() end, opts)
+  vim.keymap.set("n", "<leader>ws", function() vim.lsp.buf.workspace_symbol() end, opts)
   vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
@@ -51,5 +50,3 @@ vim.diagnostic.config({
     virtual_text = true
 })
 
-
-vim.cmd[[colorscheme tokyonight-night]]

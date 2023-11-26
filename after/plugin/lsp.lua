@@ -62,7 +62,7 @@ vim.diagnostic.config({
 
 
 function paint()
-    vim.cmd[[colorscheme tokyonight]]
+    vim.cmd[[colorscheme tokyonight-night]]
 end
 
 paint()

@@ -1,13 +1,6 @@
 vim.cmd "colorscheme tokyonight-night"
 vim.cmd("highlight Normal guibg=NONE ctermbg=NONE")
 
-paint()
-function paint(color)
-    vim.cmd[[colorscheme tokyonight-night]]
-end
-
-paint()
-
 require("tokyonight").setup({
   -- your configuration comes here
   -- or leave it empty to use the default settings

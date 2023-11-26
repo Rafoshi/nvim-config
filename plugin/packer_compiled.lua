@@ -105,11 +105,8 @@ _G.packer_plugins = {
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
   ["copilot.vim"] = {
-    cond = { "return not vim.g.vscode" },
-    loaded = false,
-    needs_bufread = false,
-    only_cond = true,
-    path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\copilot.vim",
+    loaded = true,
+    path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\copilot.vim",
     url = "https://github.com/github/copilot.vim"
   },
   ["friendly-snippets"] = {
@@ -118,11 +115,8 @@ _G.packer_plugins = {
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
   harpoon = {
-    cond = { "return not vim.g.vscode" },
-    loaded = false,
-    needs_bufread = false,
-    only_cond = true,
-    path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\harpoon",
+    loaded = true,
+    path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
   ["lsp-zero.nvim"] = {
@@ -159,12 +153,9 @@ _G.packer_plugins = {
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-treesitter"] = {
-    cond = { "return not vim.g.vscode" },
     config = { "\27LJ\2\nµ\1\0\0\4\0\b\0\0146\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\0016\0\0\0'\2\6\0B\0\2\2+\1\1\0=\1\a\0K\0\1\0\15prefer_git\28nvim-treesitter.install\14highlight\1\0\1\venable\2\1\0\1\21ensure_installed\ball\nsetup\28nvim-treesitter.configs\frequire\0" },
-    loaded = false,
-    needs_bufread = false,
-    only_cond = true,
-    path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\nvim-treesitter",
+    loaded = true,
+    path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
@@ -184,28 +175,19 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["telescope.nvim"] = {
-    cond = { "return not vim.g.vscode" },
-    loaded = false,
-    needs_bufread = true,
-    only_cond = true,
-    path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\telescope.nvim",
+    loaded = true,
+    path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["tokyonight.nvim"] = {
-    cond = { "return not vim.g.vscode" },
     config = { "\27LJ\2\n\v\0\0\1\0\0\0\1K\0\1\0\0" },
-    loaded = false,
-    needs_bufread = false,
-    only_cond = true,
-    path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\tokyonight.nvim",
+    loaded = true,
+    path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
   },
   undotree = {
-    cond = { "return not vim.g.vscode" },
-    loaded = false,
-    needs_bufread = false,
-    only_cond = true,
-    path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\undotree",
+    loaded = true,
+    path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\undotree",
     url = "https://github.com/mbbill/undotree"
   },
   ["vim-visual-multi"] = {
@@ -216,28 +198,18 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: nvim-treesitter
+time([[Config for nvim-treesitter]], true)
+try_loadstring("\27LJ\2\nµ\1\0\0\4\0\b\0\0146\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\0016\0\0\0'\2\6\0B\0\2\2+\1\1\0=\1\a\0K\0\1\0\15prefer_git\28nvim-treesitter.install\14highlight\1\0\1\venable\2\1\0\1\21ensure_installed\ball\nsetup\28nvim-treesitter.configs\frequire\0", "config", "nvim-treesitter")
+time([[Config for nvim-treesitter]], false)
+-- Config for: tokyonight.nvim
+time([[Config for tokyonight.nvim]], true)
+try_loadstring("\27LJ\2\n\v\0\0\1\0\0\0\1K\0\1\0\0", "config", "tokyonight.nvim")
+time([[Config for tokyonight.nvim]], false)
 -- Conditional loads
-time([[Conditional loading of harpoon]], true)
-  require("packer.load")({"harpoon"}, {}, _G.packer_plugins)
-time([[Conditional loading of harpoon]], false)
-time([[Conditional loading of telescope.nvim]], true)
-  require("packer.load")({"telescope.nvim"}, {}, _G.packer_plugins)
-time([[Conditional loading of telescope.nvim]], false)
 time([[Conditional loading of lsp-zero.nvim]], true)
   require("packer.load")({"lsp-zero.nvim"}, {}, _G.packer_plugins)
 time([[Conditional loading of lsp-zero.nvim]], false)
-time([[Conditional loading of tokyonight.nvim]], true)
-  require("packer.load")({"tokyonight.nvim"}, {}, _G.packer_plugins)
-time([[Conditional loading of tokyonight.nvim]], false)
-time([[Conditional loading of nvim-treesitter]], true)
-  require("packer.load")({"nvim-treesitter"}, {}, _G.packer_plugins)
-time([[Conditional loading of nvim-treesitter]], false)
-time([[Conditional loading of copilot.vim]], true)
-  require("packer.load")({"copilot.vim"}, {}, _G.packer_plugins)
-time([[Conditional loading of copilot.vim]], false)
-time([[Conditional loading of undotree]], true)
-  require("packer.load")({"undotree"}, {}, _G.packer_plugins)
-time([[Conditional loading of undotree]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

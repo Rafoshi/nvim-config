@@ -6,13 +6,11 @@ return require('packer').startup(function(use)
     use {
         'nvim-telescope/telescope.nvim',
         tag = '0.1.2',
-        cond = [[not vim.g.vscode]],
-        requires = { 'nvim-lua/plenary.nvim' } 
+        requires = { 'nvim-lua/plenary.nvim' }
     }
 
     use {
         "folke/tokyonight.nvim",
-        cond = [[not vim.g.vscode]],
         config = function()
         end
     }
@@ -24,7 +22,6 @@ return require('packer').startup(function(use)
 
     use {
         'nvim-treesitter/nvim-treesitter',
-        cond = [[not vim.g.vscode]],
         run = ':TSUpdate',
         config = function()
             require'nvim-treesitter.configs'.setup {
@@ -38,15 +35,12 @@ return require('packer').startup(function(use)
     }
     use {
         'theprimeagen/harpoon',
-        cond = [[not vim.g.vscode]],
     }
     use {
         'github/copilot.vim',
-        cond = [[not vim.g.vscode]],
     }
     use {
-        'mbbill/undotree', 
-        cond = [[not vim.g.vscode]],
+        'mbbill/undotree',
     }
     use {
         'mg979/vim-visual-multi',

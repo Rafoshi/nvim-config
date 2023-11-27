@@ -33,6 +33,14 @@ return require('packer').startup(function(use)
     use { 'mbbill/undotree' }
     use { 'mg979/vim-visual-multi', branch = 'master' }
     use {
+        "SmiteshP/nvim-navbuddy",
+        requires = {
+            "SmiteshP/nvim-navic",
+            "MunifTanjim/nui.nvim",
+            "numToStr/Comment.nvim",    -- Optional
+        }
+    }
+    use {
         'VonHeikemen/lsp-zero.nvim',
         cond = [[not vim.g.vscode]],
         branch = 'v1.x',

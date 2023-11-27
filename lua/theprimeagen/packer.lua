@@ -8,46 +8,30 @@ return require('packer').startup(function(use)
         tag = '0.1.2',
         requires = { 'nvim-lua/plenary.nvim' }
     }
-
     use { "mhinz/vim-startify" }
-
-    use {
-        "folke/tokyonight.nvim",
-        config = function()
-        end
-    }
-
+    use { "folke/tokyonight.nvim" }
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     }
-
     use {
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate',
         config = function()
-            require'nvim-treesitter.configs'.setup {
+            require 'nvim-treesitter.configs'.setup {
                 ensure_installed = 'all',
                 highlight = {
                     enable = true,
                 },
             }
-            require'nvim-treesitter.install'.prefer_git = false
+            require 'nvim-treesitter.install'.prefer_git = false
         end
     }
-    use {
-        'theprimeagen/harpoon',
-    }
-    use {
-        'github/copilot.vim',
-    }
-    use {
-        'mbbill/undotree',
-    }
-    use {
-        'mg979/vim-visual-multi',
-        branch = 'master'
-    }
+    use { 'theprimeagen/harpoon' }
+    use { 'github/copilot.vim' }
+    use { 'airblade/vim-gitgutter' }
+    use { 'mbbill/undotree' }
+    use { 'mg979/vim-visual-multi', branch = 'master' }
     use {
         'VonHeikemen/lsp-zero.nvim',
         cond = [[not vim.g.vscode]],
@@ -67,4 +51,3 @@ return require('packer').startup(function(use)
         }
     }
 end)
-

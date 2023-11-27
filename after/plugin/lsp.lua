@@ -46,6 +46,26 @@ lsp.on_attach(function(client, bufnr)
     vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
+navbuddy.setup {
+    window = {
+        size = "100%",
+    },
+    sections = {
+        left = {
+            size = "10%",
+        },
+        mid = {
+            size = "80%",
+        },
+        right = {
+            -- No size option for right most section. It fills to
+            -- remaining area.
+            preview = "never",     -- Right section can show previews too.
+            -- Options: "leaf", "always" or "never"
+        }
+    },
+}
+
 lsp.setup()
 
 vim.diagnostic.config({

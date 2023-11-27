@@ -8,8 +8,8 @@ return require('packer').startup(function(use)
         tag = '0.1.2',
         requires = { 'nvim-lua/plenary.nvim' }
     }
-    use { "mhinz/vim-startify" }
     use { "folke/tokyonight.nvim" }
+    use { "RRethy/vim-illuminate" }
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }

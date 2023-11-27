@@ -214,11 +214,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-gitgutter",
     url = "https://github.com/airblade/vim-gitgutter"
   },
-  ["vim-startify"] = {
-    loaded = true,
-    path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-startify",
-    url = "https://github.com/mhinz/vim-startify"
-  },
   ["vim-visual-multi"] = {
     loaded = true,
     path = "C:\\Users\\USER-BRGAAP\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-visual-multi",

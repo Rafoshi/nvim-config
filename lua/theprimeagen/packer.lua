@@ -33,11 +33,17 @@ return require('packer').startup(function(use)
     use { 'mbbill/undotree' }
     use { 'mg979/vim-visual-multi', branch = 'master' }
     use {
+        "ggandor/leap.nvim",
+        requires = {
+            'tpope/vim-repeat' ,
+        }
+    }
+    use {
         "SmiteshP/nvim-navbuddy",
         requires = {
             "SmiteshP/nvim-navic",
             "MunifTanjim/nui.nvim",
-            "numToStr/Comment.nvim",    -- Optional
+            "numToStr/Comment.nvim",
         }
     }
     use {

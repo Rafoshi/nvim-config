@@ -27,7 +27,10 @@ return require('packer').startup(function(use)
             require 'nvim-treesitter.install'.prefer_git = false
         end
     }
-    use { 'theprimeagen/harpoon' }
+    use { 
+        'theprimeagen/harpoon',
+        branch = "harpoon2"
+    }
     use { 'github/copilot.vim' }
     use { 'airblade/vim-gitgutter' }
     use { 'mbbill/undotree' }

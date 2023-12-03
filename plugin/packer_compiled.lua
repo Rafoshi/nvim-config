@@ -124,6 +124,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
+  ["kanagawa.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\kanagawa.nvim",
+    url = "https://github.com/rebelot/kanagawa.nvim"
+  },
   ["leap.nvim"] = {
     loaded = true,
     path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\leap.nvim",

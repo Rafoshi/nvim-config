@@ -229,11 +229,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-gitgutter",
     url = "https://github.com/airblade/vim-gitgutter"
   },
-  ["vim-illuminate"] = {
-    loaded = true,
-    path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-illuminate",
-    url = "https://github.com/RRethy/vim-illuminate"
-  },
   ["vim-repeat"] = {
     loaded = true,
     path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-repeat",

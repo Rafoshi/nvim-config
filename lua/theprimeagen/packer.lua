@@ -10,7 +10,6 @@ return require('packer').startup(function(use)
     }
     use { "folke/tokyonight.nvim" }
     use { 'rebelot/kanagawa.nvim' }
-    use { "RRethy/vim-illuminate" }
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }

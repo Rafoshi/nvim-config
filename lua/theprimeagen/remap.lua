@@ -33,6 +33,7 @@ vim.keymap.set("n", "<leader><leader>", function()
 end)
 
 vim.api.nvim_set_keymap('n', '<leader>td', '<cmd>TodoTelescope<cr>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('t', '<leader>q', '<C-\\><C-n>', {noremap = true})
 
 vim.api.nvim_set_keymap('x', '<', '<gv', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('x', '>', '>gv', { noremap = true, silent = true })

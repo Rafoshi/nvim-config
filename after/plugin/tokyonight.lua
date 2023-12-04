@@ -1,4 +1,4 @@
-vim.cmd[[colorscheme kanagawa-dragon]]
+vim.cmd[[colorscheme kanagawa]]
 
 require("tokyonight").setup({
   style = "day",

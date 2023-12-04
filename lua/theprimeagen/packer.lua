@@ -33,6 +33,7 @@ return require('packer').startup(function(use)
         branch = "harpoon2"
     }
     use { 'github/copilot.vim' }
+    use { 'folke/todo-comments.nvim' }
     use { 'airblade/vim-gitgutter' }
     use { 'mbbill/undotree' }
     use { 'mg979/vim-visual-multi', branch = 'master' }

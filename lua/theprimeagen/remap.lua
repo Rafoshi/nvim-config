@@ -32,6 +32,8 @@ vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
 
+vim.api.nvim_set_keymap('n', '<leader>td', '<cmd>TodoTelescope<cr>', { noremap = true, silent = true })
+
 vim.api.nvim_set_keymap('x', '<', '<gv', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('x', '>', '>gv', { noremap = true, silent = true })
 vim.api.nvim_command('set complete-=i')

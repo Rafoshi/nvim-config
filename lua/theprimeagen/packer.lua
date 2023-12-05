@@ -10,6 +10,7 @@ return require('packer').startup(function(use)
     }
     use { "folke/tokyonight.nvim" }
     use { 'rebelot/kanagawa.nvim' }
+    use { "RRethy/vim-illuminate" }
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
@@ -33,7 +34,7 @@ return require('packer').startup(function(use)
     }
     use { 'github/copilot.vim' }
     use { 'folke/todo-comments.nvim' }
-    use { 'airblade/vim-gitgutter' }
+    use { 'lewis6991/gitsigns.nvim' }
     use { 'mbbill/undotree' }
     use { 'mg979/vim-visual-multi', branch = 'master' }
     use {

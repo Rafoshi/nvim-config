@@ -37,8 +37,19 @@ vim.api.nvim_set_keymap('t', '<leader>q', '<C-\\><C-n>', {noremap = true})
 
 vim.api.nvim_set_keymap('x', '<', '<gv', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('x', '>', '>gv', { noremap = true, silent = true })
+
 vim.api.nvim_command('set complete-=i')
 vim.api.nvim_command('set complete-=t')
-vim.api.nvim_set_keymap('n', '<leader>bb', ':vertical res +10<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>ss', ':vertical res -10<CR>', { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap('n', '<C-Up>', ':resize -2<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-Down>', ':resize +2<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-Left>', ':vertical res -2<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-Right>', ':vertical res +2<CR>', { noremap = true, silent = true })
+
 vim.api.nvim_set_keymap('n', '<leader>cn', ':let @+ = expand("%:t")<CR>', { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap('n', '<C-f>', ':cnext<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-b>', ':cprev<CR>', { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap('n', ';', ':', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', ';', ':', { noremap = true, silent = true })

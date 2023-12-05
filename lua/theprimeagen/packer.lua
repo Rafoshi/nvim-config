@@ -8,9 +8,9 @@ return require('packer').startup(function(use)
         tag = '0.1.2',
         requires = { 'nvim-lua/plenary.nvim' }
     }
-    use { "folke/tokyonight.nvim" }
     use { 'rebelot/kanagawa.nvim' }
     use { "RRethy/vim-illuminate" }
+
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }

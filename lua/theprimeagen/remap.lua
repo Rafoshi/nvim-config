@@ -32,11 +32,11 @@ vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
 
-vim.api.nvim_set_keymap('n', '<leader>td', '<cmd>TodoTelescope<cr>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>ft', '<cmd>TodoTelescope<cr>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('t', '<leader>q', '<C-\\><C-n>', {noremap = true})
-
 vim.api.nvim_set_keymap('x', '<', '<gv', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('x', '>', '>gv', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('x', '>', '>gv', { noremap = true, silent = false })
+
 
 vim.api.nvim_command('set complete-=i')
 vim.api.nvim_command('set complete-=t')
@@ -52,3 +52,4 @@ vim.api.nvim_set_keymap('n', '<C-f>', ':cnext<CR>', { noremap = true, silent = t
 vim.api.nvim_set_keymap('n', '<C-b>', ':cprev<CR>', { noremap = true, silent = true })
 
 vim.api.nvim_set_keymap('n', '<leader>gl', ':Gitsigns toggle_current_line_blame<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>gld', ':Gitsigns toggle_word_diff<CR> :Gitsigns toggle_deleted<CR>:Gitsigns toggle_linehl<CR>', { noremap = true, silent = true })

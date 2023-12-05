@@ -51,5 +51,4 @@ vim.api.nvim_set_keymap('n', '<leader>cn', ':let @+ = expand("%:t")<CR>', { nore
 vim.api.nvim_set_keymap('n', '<C-f>', ':cnext<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-b>', ':cprev<CR>', { noremap = true, silent = true })
 
-vim.api.nvim_set_keymap('n', ';', ':', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('v', ';', ':', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>gl', ':Gitsigns toggle_current_line_blame<CR>', { noremap = true, silent = true })

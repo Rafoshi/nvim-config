@@ -10,7 +10,12 @@ return require('packer').startup(function(use)
     }
     use { 'rebelot/kanagawa.nvim' }
     use { "RRethy/vim-illuminate" }
+    use({
+        "iamcco/markdown-preview.nvim",
+        run = function() vim.fn["mkdp#util#install"]() end,
+    })
 
+    use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
@@ -28,9 +33,10 @@ return require('packer').startup(function(use)
             require 'nvim-treesitter.install'.prefer_git = false
         end
     }
-    use { 
-        'theprimeagen/harpoon',
-        branch = "harpoon2"
+    use {
+        "ThePrimeagen/harpoon",
+        branch = "harpoon2",
+        requires = { {"nvim-lua/plenary.nvim"} }
     }
     use { 'github/copilot.vim' }
     use { 'folke/todo-comments.nvim' }

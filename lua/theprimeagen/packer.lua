@@ -3,23 +3,55 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
 
+    -- Utils
+    use({
+        "iamcco/markdown-preview.nvim",
+        run = function() vim.fn["mkdp#util#install"]() end,
+    })
+    use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+
+    -- Edit text
+    use { 'mbbill/undotree' }
+    use { 'mg979/vim-visual-multi', branch = 'master' }
+    use { 'github/copilot.vim' }
+
+    -- Navigation
+    use { 'folke/todo-comments.nvim' }
     use {
         'nvim-telescope/telescope.nvim',
         tag = '0.1.2',
         requires = { 'nvim-lua/plenary.nvim' }
     }
+    use {
+        "ThePrimeagen/harpoon",
+        branch = "harpoon2",
+        requires = { {"nvim-lua/plenary.nvim"} }
+    }
+    use {
+        "ggandor/leap.nvim",
+        requires = {
+            'tpope/vim-repeat' ,
+        }
+    }
+
+    -- Visual
     use { 'rebelot/kanagawa.nvim' }
     use { "RRethy/vim-illuminate" }
-    use({
-        "iamcco/markdown-preview.nvim",
-        run = function() vim.fn["mkdp#util#install"]() end,
-    })
-
-    use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+    use { 'lewis6991/gitsigns.nvim' }
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     }
+    use {
+        "SmiteshP/nvim-navbuddy",
+        requires = {
+            "SmiteshP/nvim-navic",
+            "MunifTanjim/nui.nvim",
+            "numToStr/Comment.nvim",
+        }
+    }
+
+    -- Treesitter
     use {
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate',
@@ -33,30 +65,11 @@ return require('packer').startup(function(use)
             require 'nvim-treesitter.install'.prefer_git = false
         end
     }
-    use {
-        "ThePrimeagen/harpoon",
-        branch = "harpoon2",
-        requires = { {"nvim-lua/plenary.nvim"} }
-    }
-    use { 'github/copilot.vim' }
-    use { 'folke/todo-comments.nvim' }
-    use { 'lewis6991/gitsigns.nvim' }
-    use { 'mbbill/undotree' }
-    use { 'mg979/vim-visual-multi', branch = 'master' }
-    use {
-        "ggandor/leap.nvim",
-        requires = {
-            'tpope/vim-repeat' ,
-        }
-    }
-    use {
-        "SmiteshP/nvim-navbuddy",
-        requires = {
-            "SmiteshP/nvim-navic",
-            "MunifTanjim/nui.nvim",
-            "numToStr/Comment.nvim",
-        }
-    }
+
+    -- DAP
+    use {'mfussenegger/nvim-dap'}
+
+    -- LSP
     use {
         'VonHeikemen/lsp-zero.nvim',
         cond = [[not vim.g.vscode]],

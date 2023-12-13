@@ -65,9 +65,6 @@ return require('packer').startup(function(use)
         end
     }
 
-    -- DAP
-    use {'mfussenegger/nvim-dap'}
-
     -- LSP
     use {
         'VonHeikemen/lsp-zero.nvim',

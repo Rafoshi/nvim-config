@@ -13,6 +13,10 @@ return require('packer').startup(function(use)
     use { 'mbbill/undotree' }
     use { 'mg979/vim-visual-multi', branch = 'master' }
     use { 'github/copilot.vim' }
+    use {
+        "windwp/nvim-autopairs",
+        config = function() require("nvim-autopairs").setup {} end
+    }
 
     -- Navigation
     use { 'folke/todo-comments.nvim' }
@@ -35,7 +39,7 @@ return require('packer').startup(function(use)
 
     -- Visual
     use { 'rebelot/kanagawa.nvim' }
-    use { "RRethy/vim-illuminate" }
+    use { "catppuccin/nvim", as = "catppuccin" }
     use { 'lewis6991/gitsigns.nvim' }
     use {
         'nvim-lualine/lualine.nvim',

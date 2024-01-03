@@ -10,7 +10,12 @@ lsp.ensure_installed({
 
 lsp.nvim_workspace()
 
+local cmp_autopairs = require('nvim-autopairs.completion.cmp')
 local cmp = require('cmp')
+cmp.event:on(
+  'confirm_done',
+  cmp_autopairs.on_confirm_done()
+)
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
 local cmp_mappings = lsp.defaults.cmp_mappings({
     ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
@@ -58,10 +63,7 @@ navbuddy.setup {
             size = "80%",
         },
         right = {
-            -- No size option for right most section. It fills to
-            -- remaining area.
-            preview = "never",     -- Right section can show previews too.
-            -- Options: "leaf", "always" or "never"
+            preview = "never",
         }
     },
 }

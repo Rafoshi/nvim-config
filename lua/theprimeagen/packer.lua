@@ -13,10 +13,7 @@ return require('packer').startup(function(use)
     use { 'mbbill/undotree' }
     use { 'mg979/vim-visual-multi', branch = 'master' }
     use { 'github/copilot.vim' }
-    use {
-        "windwp/nvim-autopairs",
-        config = function() require("nvim-autopairs").setup {} end
-    }
+    use { 'RRethy/vim-illuminate' }
 
     -- Navigation
     use { 'folke/todo-comments.nvim' }
@@ -86,6 +83,16 @@ return require('packer').startup(function(use)
             'hrsh7th/cmp-nvim-lua',
             'L3MON4D3/LuaSnip',
             'rafamadriz/friendly-snippets',
+        }
+    }
+
+    -- DAP
+    use {
+        "mfussenegger/nvim-dap",
+        requires = {
+            "rcarriga/nvim-dap-ui",
+            "theHamsta/nvim-dap-virtual-text",
+            "nvim-telescope/telescope-dap.nvim",
         }
     }
 end)

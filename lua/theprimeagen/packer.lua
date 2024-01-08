@@ -3,12 +3,6 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
 
-    -- Utils
-    use({
-        "iamcco/markdown-preview.nvim",
-        run = function() vim.fn["mkdp#util#install"]() end,
-    })
-
     -- Edit text
     use { 'mbbill/undotree' }
     use { 'mg979/vim-visual-multi', branch = 'master' }

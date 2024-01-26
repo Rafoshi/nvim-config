@@ -9,11 +9,9 @@ return require('packer').startup(function(use)
     use { 'github/copilot.vim' }
     use({
         "kylechui/nvim-surround",
-        tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+        tag = "*",
         config = function()
-            require("nvim-surround").setup({
-                -- Configuration here, or leave empty to use defaults
-            })
+            require("nvim-surround").setup()
         end
     })
     use { 'RRethy/vim-illuminate' }
@@ -40,6 +38,7 @@ return require('packer').startup(function(use)
     -- Visual
     use { 'rebelot/kanagawa.nvim' }
     use { "catppuccin/nvim", as = "catppuccin" }
+    use { 'goolord/alpha-nvim' }
     use { 'lewis6991/gitsigns.nvim' }
     use {
         'nvim-lualine/lualine.nvim',

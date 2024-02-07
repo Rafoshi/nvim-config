@@ -1,10 +1,8 @@
 local lsp = require("lsp-zero")
-local navbuddy = require("nvim-navbuddy")
 
 lsp.preset("recommended")
 
 lsp.ensure_installed({
-    'tsserver',
     'csharp_ls',
 })
 
@@ -39,29 +37,11 @@ lsp.set_preferences({
 lsp.on_attach(function(client, bufnr)
     local opts = { buffer = bufnr, remap = false }
 
-    navbuddy.attach(client, bufnr)
     vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
     vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
     vim.keymap.set("n", "<leader>ws", function() vim.lsp.buf.workspace_symbol() end, opts)
     vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
-
-navbuddy.setup {
-    window = {
-        size = "100%",
-    },
-    sections = {
-        left = {
-            size = "10%",
-        },
-        mid = {
-            size = "80%",
-        },
-        right = {
-            preview = "never",
-        }
-    },
-}
 
 lsp.setup()
 

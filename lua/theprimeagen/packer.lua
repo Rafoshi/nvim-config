@@ -1,5 +1,3 @@
-vim.cmd [[packadd packer.nvim]]
-
 return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
 
@@ -44,14 +42,7 @@ return require('packer').startup(function(use)
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     }
-    use {
-        "SmiteshP/nvim-navbuddy",
-        requires = {
-            "SmiteshP/nvim-navic",
-            "MunifTanjim/nui.nvim",
-            "numToStr/Comment.nvim",
-        }
-    }
+    use { "numToStr/Comment.nvim" }
 
     -- Treesitter
     use {

@@ -85,7 +85,6 @@ _G.packer_plugins = {
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
   ["alpha-nvim"] = {
-    config = { "\27LJ\2\n`\0\0\5\0\5\0\n6\0\0\0'\2\1\0B\0\2\0029\0\2\0006\2\0\0'\4\3\0B\2\2\0029\2\4\2B\0\2\1K\0\1\0\vconfig\26alpha.themes.startify\nsetup\nalpha\frequire\0" },
     loaded = true,
     path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\alpha-nvim",
     url = "https://github.com/goolord/alpha-nvim"
@@ -173,11 +172,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  ["nui.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nui.nvim",
-    url = "https://github.com/MunifTanjim/nui.nvim"
-  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
@@ -203,16 +197,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
-  ["nvim-navbuddy"] = {
-    loaded = true,
-    path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-navbuddy",
-    url = "https://github.com/SmiteshP/nvim-navbuddy"
-  },
-  ["nvim-navic"] = {
-    loaded = true,
-    path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-navic",
-    url = "https://github.com/SmiteshP/nvim-navic"
-  },
   ["nvim-surround"] = {
     config = { "\27LJ\2\n;\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\18nvim-surround\frequire\0" },
     loaded = true,
@@ -226,8 +210,9 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
-    loaded = true,
-    path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-web-devicons",
+    loaded = false,
+    needs_bufread = false,
+    path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
@@ -278,18 +263,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: nvim-treesitter
-time([[Config for nvim-treesitter]], true)
-try_loadstring("\27LJ\2\nµ\1\0\0\4\0\b\0\0146\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\0016\0\0\0'\2\6\0B\0\2\2+\1\1\0=\1\a\0K\0\1\0\15prefer_git\28nvim-treesitter.install\14highlight\1\0\1\venable\2\1\0\1\21ensure_installed\ball\nsetup\28nvim-treesitter.configs\frequire\0", "config", "nvim-treesitter")
-time([[Config for nvim-treesitter]], false)
--- Config for: alpha-nvim
-time([[Config for alpha-nvim]], true)
-try_loadstring("\27LJ\2\n`\0\0\5\0\5\0\n6\0\0\0'\2\1\0B\0\2\0029\0\2\0006\2\0\0'\4\3\0B\2\2\0029\2\4\2B\0\2\1K\0\1\0\vconfig\26alpha.themes.startify\nsetup\nalpha\frequire\0", "config", "alpha-nvim")
-time([[Config for alpha-nvim]], false)
 -- Config for: nvim-surround
 time([[Config for nvim-surround]], true)
 try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\18nvim-surround\frequire\0", "config", "nvim-surround")
 time([[Config for nvim-surround]], false)
+-- Config for: nvim-treesitter
+time([[Config for nvim-treesitter]], true)
+try_loadstring("\27LJ\2\nµ\1\0\0\4\0\b\0\0146\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\0016\0\0\0'\2\6\0B\0\2\2+\1\1\0=\1\a\0K\0\1\0\15prefer_git\28nvim-treesitter.install\14highlight\1\0\1\venable\2\1\0\1\21ensure_installed\ball\nsetup\28nvim-treesitter.configs\frequire\0", "config", "nvim-treesitter")
+time([[Config for nvim-treesitter]], false)
 -- Conditional loads
 time([[Conditional loading of lsp-zero.nvim]], true)
   require("packer.load")({"lsp-zero.nvim"}, {}, _G.packer_plugins)

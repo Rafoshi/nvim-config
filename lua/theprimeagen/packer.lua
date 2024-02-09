@@ -15,7 +15,6 @@ return require('packer').startup(function(use)
     use { 'RRethy/vim-illuminate' }
 
     -- Navigation
-    use { 'folke/todo-comments.nvim' }
     use {
         'nvim-telescope/telescope.nvim',
         tag = '0.1.2',
@@ -77,6 +76,15 @@ return require('packer').startup(function(use)
             'L3MON4D3/LuaSnip',
             'rafamadriz/friendly-snippets',
         }
+    }
+
+    --Flutter
+    use {
+        'akinsho/flutter-tools.nvim',
+        requires = {
+            'nvim-lua/plenary.nvim',
+            'stevearc/dressing.nvim',
+        },
     }
 
     -- DAP

@@ -46,16 +46,10 @@ vim.api.nvim_set_keymap('n', '<leader>e', '<cmd>lua vim.diagnostic.open_float(0,
 -- Open terminal
 vim.api.nvim_set_keymap('n', '<leader>t', '<cmd>edit term://pwsh<CR>', { noremap = true, silent = true })
 
--- Open Navbuddy
-vim.api.nvim_set_keymap('n', '<leader>vf', '<cmd>Navbuddy<CR>', { noremap = true, silent = true })
-
 -- Source file
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
-
--- Open todo telescope
-vim.api.nvim_set_keymap('n', '<leader>ft', '<cmd>TodoTelescope<cr>', { noremap = true, silent = true })
 
 -- Exite terminal mode
 vim.api.nvim_set_keymap('t', '<leader>q', '<C-\\><C-n>', {noremap = true})

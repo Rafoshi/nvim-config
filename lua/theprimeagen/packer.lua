@@ -37,6 +37,7 @@ return require('packer').startup(function(use)
     use { "catppuccin/nvim", as = "catppuccin" }
     use { 'goolord/alpha-nvim' }
     use { 'lewis6991/gitsigns.nvim' }
+    use { 'tpope/vim-fugitive' }
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }

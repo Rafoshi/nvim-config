@@ -31,6 +31,13 @@ return require('packer').startup(function(use)
             'tpope/vim-repeat' ,
         }
     }
+    use({
+        "stevearc/oil.nvim",
+        tag = "*",
+        config = function()
+            require("oil").setup()
+        end
+    })
 
     -- Visual
     use { 'rebelot/kanagawa.nvim' }
@@ -38,6 +45,7 @@ return require('packer').startup(function(use)
     use { 'goolord/alpha-nvim' }
     use { 'lewis6991/gitsigns.nvim' }
     use { 'tpope/vim-fugitive' }
+    use 'nvim-tree/nvim-web-devicons'
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }

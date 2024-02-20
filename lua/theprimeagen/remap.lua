@@ -2,7 +2,7 @@
 vim.g.mapleader = " "
 
 --Go directory
-vim.keymap.set("n", "<leader>lf", vim.cmd.Ex)
+vim.keymap.set("n", "<leader><leader>", '<cmd>Oil<CR>')
 
 -- Move selected line / block of text in visual mode
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
@@ -47,7 +47,7 @@ vim.api.nvim_set_keymap('n', '<leader>e', '<cmd>lua vim.diagnostic.open_float(0,
 vim.api.nvim_set_keymap('n', '<leader>t', '<cmd>edit term://pwsh<CR>', { noremap = true, silent = true })
 
 -- Source file
-vim.keymap.set("n", "<leader><leader>", function()
+vim.keymap.set("n", "<leader>os", function()
     vim.cmd("so")
 end)
 
@@ -77,6 +77,10 @@ vim.api.nvim_set_keymap('n', '<C-b>', ':cprev<CR>', { noremap = true, silent = t
 
 -- Better moving between windows
 vim.api.nvim_set_keymap('n', '<leader>w', '<C-w>', { noremap = true, silent = true })
+
+-- Horizontal scrolling
+vim.api.nvim_set_keymap('n', '<leader><C-L>', '20zl', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader><C-H>', '20zh', { noremap = true, silent = true })
 
 -- Git Lens
 vim.api.nvim_set_keymap('n', '<leader>gl', ':Gitsigns toggle_current_line_blame<CR>', { noremap = true, silent = true })

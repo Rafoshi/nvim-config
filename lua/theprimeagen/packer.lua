@@ -12,7 +12,6 @@ return require('packer').startup(function(use)
             require("nvim-surround").setup()
         end
     })
-    use { 'RRethy/vim-illuminate' }
 
     -- Navigation
     use {

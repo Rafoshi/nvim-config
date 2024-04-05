@@ -39,10 +39,7 @@ return require('packer').startup(function(use)
     })
 
     -- Visual
-    use { "catppuccin/nvim", as = "catppuccin" }
-    use { 'goolord/alpha-nvim' }
     use { 'olimorris/onedarkpro.nvim' }
-    use { 'rose-pine/neovim' }
     use { 'lewis6991/gitsigns.nvim' }
     use { 'tpope/vim-fugitive' }
     use 'nvim-tree/nvim-web-devicons'

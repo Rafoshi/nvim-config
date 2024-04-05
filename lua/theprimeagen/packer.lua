@@ -94,12 +94,12 @@ return require('packer').startup(function(use)
     }
 
     -- DAP
-    use {
-        "mfussenegger/nvim-dap",
-        requires = {
-            "rcarriga/nvim-dap-ui",
-            "theHamsta/nvim-dap-virtual-text",
-            "nvim-telescope/telescope-dap.nvim",
-        }
-    }
+    -- use {
+    --     "mfussenegger/nvim-dap",
+    --     requires = {
+    --         "rcarriga/nvim-dap-ui",
+    --         "theHamsta/nvim-dap-virtual-text",
+    --         "nvim-telescope/telescope-dap.nvim",
+    --     }
+    -- }
 end)

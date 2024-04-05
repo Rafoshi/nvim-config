@@ -172,21 +172,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
-  ["nvim-dap"] = {
-    loaded = true,
-    path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-dap",
-    url = "https://github.com/mfussenegger/nvim-dap"
-  },
-  ["nvim-dap-ui"] = {
-    loaded = true,
-    path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-dap-ui",
-    url = "https://github.com/rcarriga/nvim-dap-ui"
-  },
-  ["nvim-dap-virtual-text"] = {
-    loaded = true,
-    path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-dap-virtual-text",
-    url = "https://github.com/theHamsta/nvim-dap-virtual-text"
-  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
@@ -230,11 +215,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  ["telescope-dap.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope-dap.nvim",
-    url = "https://github.com/nvim-telescope/telescope-dap.nvim"
-  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
@@ -263,10 +243,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: oil.nvim
-time([[Config for oil.nvim]], true)
-try_loadstring("\27LJ\2\n1\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\boil\frequire\0", "config", "oil.nvim")
-time([[Config for oil.nvim]], false)
 -- Config for: nvim-treesitter
 time([[Config for nvim-treesitter]], true)
 try_loadstring("\27LJ\2\nµ\1\0\0\4\0\b\0\0146\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\0016\0\0\0'\2\6\0B\0\2\2+\1\1\0=\1\a\0K\0\1\0\15prefer_git\28nvim-treesitter.install\14highlight\1\0\1\venable\2\1\0\1\21ensure_installed\ball\nsetup\28nvim-treesitter.configs\frequire\0", "config", "nvim-treesitter")
@@ -275,6 +251,10 @@ time([[Config for nvim-treesitter]], false)
 time([[Config for nvim-surround]], true)
 try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\18nvim-surround\frequire\0", "config", "nvim-surround")
 time([[Config for nvim-surround]], false)
+-- Config for: oil.nvim
+time([[Config for oil.nvim]], true)
+try_loadstring("\27LJ\2\n1\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\boil\frequire\0", "config", "oil.nvim")
+time([[Config for oil.nvim]], false)
 -- Conditional loads
 time([[Conditional loading of lsp-zero.nvim]], true)
   require("packer.load")({"lsp-zero.nvim"}, {}, _G.packer_plugins)

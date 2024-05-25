@@ -22,3 +22,5 @@ vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 100
+vim.opt.ignorecase = true   -- Ignore case in search patterns
+vim.opt.smartcase = true

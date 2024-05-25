@@ -2,6 +2,13 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
 
     -- Edit text
+    use {
+        "ThePrimeagen/refactoring.nvim",
+        requires = {
+            {"nvim-lua/plenary.nvim"},
+            {"nvim-treesitter/nvim-treesitter"}
+        }
+    }
     use { 'mbbill/undotree' }
     use { 'mg979/vim-visual-multi', branch = 'master' }
     use { 'github/copilot.vim' }
@@ -40,8 +47,10 @@ return require('packer').startup(function(use)
 
     -- Visual
     use { 'olimorris/onedarkpro.nvim' }
+    use { "scottmckendry/cyberdream.nvim" }
     use { 'lewis6991/gitsigns.nvim' }
     use { 'tpope/vim-fugitive' }
+    use { 'RRethy/vim-illuminate' }
     use 'nvim-tree/nvim-web-devicons'
     use {
         'nvim-lualine/lualine.nvim',
@@ -55,7 +64,7 @@ return require('packer').startup(function(use)
         run = ':TSUpdate',
         config = function()
             require 'nvim-treesitter.configs'.setup {
-                ensure_installed = 'all',
+                -- ensure_installed = 'all',
                 highlight = {
                     enable = true,
                 },
@@ -98,6 +107,7 @@ return require('packer').startup(function(use)
     --     "mfussenegger/nvim-dap",
     --     requires = {
     --         "rcarriga/nvim-dap-ui",
+    --         "nvim-neotest/nvim-nio",
     --         "theHamsta/nvim-dap-virtual-text",
     --         "nvim-telescope/telescope-dap.nvim",
     --     }

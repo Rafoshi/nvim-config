@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\copilot.vim",
     url = "https://github.com/github/copilot.vim"
   },
+  ["cyberdream.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cyberdream.nvim",
+    url = "https://github.com/scottmckendry/cyberdream.nvim"
+  },
   ["dressing.nvim"] = {
     loaded = true,
     path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\dressing.nvim",
@@ -184,7 +189,7 @@ _G.packer_plugins = {
     url = "https://github.com/kylechui/nvim-surround"
   },
   ["nvim-treesitter"] = {
-    config = { "\27LJ\2\nµ\1\0\0\4\0\b\0\0146\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\0016\0\0\0'\2\6\0B\0\2\2+\1\1\0=\1\a\0K\0\1\0\15prefer_git\28nvim-treesitter.install\14highlight\1\0\1\venable\2\1\0\1\21ensure_installed\ball\nsetup\28nvim-treesitter.configs\frequire\0" },
+    config = { "\27LJ\2\n \1\0\0\4\0\b\0\0146\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\0016\0\0\0'\2\6\0B\0\2\2+\1\1\0=\1\a\0K\0\1\0\15prefer_git\28nvim-treesitter.install\14highlight\1\0\0\1\0\1\venable\2\nsetup\28nvim-treesitter.configs\frequire\0" },
     loaded = true,
     path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
@@ -215,6 +220,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["refactoring.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\refactoring.nvim",
+    url = "https://github.com/ThePrimeagen/refactoring.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
@@ -230,6 +240,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
   },
+  ["vim-illuminate"] = {
+    loaded = true,
+    path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-illuminate",
+    url = "https://github.com/RRethy/vim-illuminate"
+  },
   ["vim-repeat"] = {
     loaded = true,
     path = "C:\\Users\\rafai\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-repeat",
@@ -243,18 +258,18 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: nvim-treesitter
-time([[Config for nvim-treesitter]], true)
-try_loadstring("\27LJ\2\nµ\1\0\0\4\0\b\0\0146\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\0016\0\0\0'\2\6\0B\0\2\2+\1\1\0=\1\a\0K\0\1\0\15prefer_git\28nvim-treesitter.install\14highlight\1\0\1\venable\2\1\0\1\21ensure_installed\ball\nsetup\28nvim-treesitter.configs\frequire\0", "config", "nvim-treesitter")
-time([[Config for nvim-treesitter]], false)
--- Config for: nvim-surround
-time([[Config for nvim-surround]], true)
-try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\18nvim-surround\frequire\0", "config", "nvim-surround")
-time([[Config for nvim-surround]], false)
 -- Config for: oil.nvim
 time([[Config for oil.nvim]], true)
 try_loadstring("\27LJ\2\n1\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\boil\frequire\0", "config", "oil.nvim")
 time([[Config for oil.nvim]], false)
+-- Config for: nvim-surround
+time([[Config for nvim-surround]], true)
+try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\18nvim-surround\frequire\0", "config", "nvim-surround")
+time([[Config for nvim-surround]], false)
+-- Config for: nvim-treesitter
+time([[Config for nvim-treesitter]], true)
+try_loadstring("\27LJ\2\n \1\0\0\4\0\b\0\0146\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\0016\0\0\0'\2\6\0B\0\2\2+\1\1\0=\1\a\0K\0\1\0\15prefer_git\28nvim-treesitter.install\14highlight\1\0\0\1\0\1\venable\2\nsetup\28nvim-treesitter.configs\frequire\0", "config", "nvim-treesitter")
+time([[Config for nvim-treesitter]], false)
 -- Conditional loads
 time([[Conditional loading of lsp-zero.nvim]], true)
   require("packer.load")({"lsp-zero.nvim"}, {}, _G.packer_plugins)

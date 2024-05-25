@@ -22,6 +22,9 @@ vim.keymap.set("n", "N", "Nzzzv")
 -- Paste without losing register
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
+-- Save quicker
+vim.keymap.set("n", "<leader>k", '<cmd>wa<CR>')
+
 -- Yanking to clipboard
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])

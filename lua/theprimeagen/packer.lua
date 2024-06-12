@@ -40,6 +40,7 @@ return require('packer').startup(function(use)
     -- use { "scottmckendry/cyberdream.nvim" }
     use { "rose-pine/neovim" }
     use { 'lewis6991/gitsigns.nvim' }
+    use 'tpope/vim-fugitive'
     use { 'RRethy/vim-illuminate' }
     use 'nvim-tree/nvim-web-devicons'
     use {

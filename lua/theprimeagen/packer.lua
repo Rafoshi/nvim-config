@@ -2,13 +2,6 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
 
     -- Edit text
-    use {
-        "ThePrimeagen/refactoring.nvim",
-        requires = {
-            {"nvim-lua/plenary.nvim"},
-            {"nvim-treesitter/nvim-treesitter"}
-        }
-    }
     use { 'mbbill/undotree' }
     use { 'mg979/vim-visual-multi', branch = 'master' }
     use { 'github/copilot.vim' }
@@ -40,16 +33,13 @@ return require('packer').startup(function(use)
     use({
         "stevearc/oil.nvim",
         tag = "*",
-        config = function()
-            require("oil").setup()
-        end
     })
 
     -- Visual
-    use { 'olimorris/onedarkpro.nvim' }
-    use { "scottmckendry/cyberdream.nvim" }
+    -- use { 'olimorris/onedarkpro.nvim' }
+    -- use { "scottmckendry/cyberdream.nvim" }
+    use { "rose-pine/neovim" }
     use { 'lewis6991/gitsigns.nvim' }
-    use { 'tpope/vim-fugitive' }
     use { 'RRethy/vim-illuminate' }
     use 'nvim-tree/nvim-web-devicons'
     use {

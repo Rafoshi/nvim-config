@@ -36,13 +36,12 @@ return require('packer').startup(function(use)
     })
 
     -- Visual
-    -- use { 'olimorris/onedarkpro.nvim' }
-    -- use { "scottmckendry/cyberdream.nvim" }
     use { "rose-pine/neovim" }
+    use {"numToStr/FTerm.nvim"}
     use { 'lewis6991/gitsigns.nvim' }
-    use 'tpope/vim-fugitive'
+    use {'tpope/vim-fugitive'}
     use { 'RRethy/vim-illuminate' }
-    use 'nvim-tree/nvim-web-devicons'
+    use {'nvim-tree/nvim-web-devicons'}
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }

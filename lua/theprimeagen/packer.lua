@@ -14,6 +14,7 @@ return require('packer').startup(function(use)
     })
 
     -- Navigation
+    use { 'chentoast/marks.nvim' }
     use {
         'nvim-telescope/telescope.nvim',
         tag = '0.1.2',
@@ -22,12 +23,12 @@ return require('packer').startup(function(use)
     use {
         "ThePrimeagen/harpoon",
         branch = "harpoon2",
-        requires = { {"nvim-lua/plenary.nvim"} }
+        requires = { { "nvim-lua/plenary.nvim" } }
     }
     use {
         "ggandor/leap.nvim",
         requires = {
-            'tpope/vim-repeat' ,
+            'tpope/vim-repeat',
         }
     }
     use({
@@ -37,11 +38,13 @@ return require('packer').startup(function(use)
 
     -- Visual
     use { "rose-pine/neovim" }
-    use {"numToStr/FTerm.nvim"}
+    use { "EdenEast/nightfox.nvim" }
+    use { "catppuccin/nvim", as = "catppuccin" }
+    use { "numToStr/FTerm.nvim" }
     use { 'lewis6991/gitsigns.nvim' }
-    use {'tpope/vim-fugitive'}
-    use { 'RRethy/vim-illuminate' }
-    use {'nvim-tree/nvim-web-devicons'}
+    use { 'tpope/vim-fugitive' }
+    -- use { 'RRethy/vim-illuminate' }
+    use { 'nvim-tree/nvim-web-devicons' }
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
